@@ -12,6 +12,10 @@ My 2 Cents is an embeddable widget that will allow readers to offer authors smal
  - action history, cancel pending
  - choose payout amount
 
+![plan1](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/plan1.jpg)
+![plan2](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/plan2.jpg)
+
+
 # Widget Functionality
  * Toggles between paid or not paid (registers intent to pay)
  * Link to our site, which contains users accounts
