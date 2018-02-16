@@ -45,7 +45,7 @@ React.js/Redux
 
 ## Back-end
  * Django - we will learn this this weekend
- * postgres
+ * postgres or MongoDB - we are still discussing this
 
 
 ## Third-party payment (bonus)
