@@ -1,16 +1,23 @@
 # Background and Overview
-Being asked to write an article for “exposure” or for a very low payment is a problem many writers experience. We want to offer publications a way to give their writers an additional potential revenue source.
+Being asked to write an article for “exposure” or for a very low payment is a problem many writers experience. We want to offer publications a way to give their writers an additional potential revenue source directly from their readers.
 
-My 2 Cents is an embeddable widget that will allow readers to offer authors small amounts of money with a very simple click (or a couple of clicks).
+My 2 Cents is an embeddable widget that will allow readers to offer authors small amounts of money, or "tips", with a very simple click (or a couple of clicks). My 2 Cents widget will be JavaScript code generated on a per-article bases and need to be embedded on each article page (or wherever--the functionality will be the same). Toggling a tip on our widget will represent a pledge to
 
 # Functionality & MVP
- * clicking widget registers intent to pay (not payment) - there are only two states: tipped/not tipped
- * user chooses tip amount on account creation from a set of predetermined amounts
- * visual receipts (user pages/must login)
+ * clicking widget registers intent to pay (not payment) - there are only two states: tipped/not tipped. If a user is not logged in, they will be sent to our site to create an account.
+ * Account creations: user chooses tip amount on account creation from a set of predetermined amounts and pay $10 to create their tip pool.
+ * visual receipts (user pages) shows articles tipped + articles written
  * At the end of a predetermined payment cycle authors that have made a minimum payout ($10?) are paid
+
 ### Bonus
- - action history, cancel pending
+ - action history, cancel pledged payments
  - choose payout amount
+ - motivate tippers: author interactions? competitive lists of most rewarded articles
+
+# Potential Problem areas
+ * transaction fees are large (2.9% + 30 cents, min)
+ * users must be logged in for widget to work (cookie?)
+ * learning to use Django
 
 ![plan1](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/plan1.jpg)
 ![plan2](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/plan2.jpg)
@@ -18,7 +25,7 @@ My 2 Cents is an embeddable widget that will allow readers to offer authors smal
 
 # Widget Functionality
  * Toggles between paid or not paid (registers intent to pay)
- * Link to our site, which contains users accounts
+ * Link to our site, which contains users accounts and signup forms
 
 
 # UX
@@ -30,6 +37,8 @@ My 2 Cents is an embeddable widget that will allow readers to offer authors smal
   ** User pages display links to articles they have pledged to support, links to those articles, and if the payment has been completed
   * backend
   ** our backend will be a standard Django build
+  ** toggling our widget to tipped will send a request to our database to create a record of an association between a User (that clicked the widget) and an Article ID.
+  ** we will create actions to sent API requests to process payments at the end of a standard payment period
 
 # Technologies
 we are considering:
@@ -38,6 +47,8 @@ Django - like rails with more configuration, written by a media company publishi
 React
 Postgresql
 node js
+
+# Project Flowchart (tbd)
 
 
 ## Front-end
