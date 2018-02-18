@@ -72,7 +72,7 @@ React.js/Redux
  * Preliminary division of responsibilities agreed upon
 
 # Group Members & Work Breakdown
-Brian Taylor Vann (BVT), Brian van den Broek (BvdB), Paul Ryan (PR) and
+Brian Taylor Vann (BTV), Brian van den Broek (BvdB), Paul Ryan (PR) and
 Alexey Spiridonov (AS)
 
 ## Day 1
