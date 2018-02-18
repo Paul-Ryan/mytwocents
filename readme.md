@@ -70,6 +70,7 @@ React.js/Redux
  * Hashed out how the app should actually work
    * User stories created
  * Preliminary division of responsibilities agreed upon
+ * Preliminary Widget design created
 
 # Group Members & Work Breakdown
 Brian Taylor Vann (BTV), Brian van den Broek (BvdB), Paul Ryan (PR) and
