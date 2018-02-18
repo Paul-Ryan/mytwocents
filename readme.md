@@ -72,12 +72,19 @@ React.js/Redux
  * Preliminary division of responsibilities agreed upon
 
 # Group Members & Work Breakdown
-Brian Taylor Vann (BVT), Brian van den Broek (BvdB), Paul Ryan (PR) and
+Brian Taylor Vann (BTV), Brian van den Broek (BvdB), Paul Ryan (PR) and
 Alexey Spiridonov (AS)
 
 ## Day 1
 
+ * Create Django models for user_payments and transactions (BTV)
+ * Create Django models for users and articles (BvdB)
+ * Generate two fake blog pages for demo site use (PR)
+ * Produce (in React) forms for account generation (AS)
+
 ## Day 2
+
+ * Implement cookies for persistent login (AS)
 
 ## Day 3
 
@@ -88,6 +95,8 @@ Alexey Spiridonov (AS)
 ## Day 6
 
 ## Day 7
+
+* Write README.md
 
 # DB
 - users
