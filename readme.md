@@ -77,6 +77,8 @@ Alexey Spiridonov (AS)
 
 ## Day 1
 
+ * Finalize DB Schema (all)
+ * Finalize the pages the app will need (all)
  * Create Django models for user_payments and transactions (BTV)
  * Create Django models for users and articles (BvdB)
  * Generate two fake blog pages for demo site use (PR)
@@ -87,6 +89,9 @@ Alexey Spiridonov (AS)
  * Implement cookies for persistent login (AS)
 
 ## Day 3
+
+ * Visual Design of Widget (AS)
+ * Widget Generation (PR)
 
 ## Day 4
 
