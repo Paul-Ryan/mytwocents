@@ -42,10 +42,10 @@ My 2 Cents is an embeddable widget that will allow readers to offer authors smal
 
 # Technologies
 We will be using:
-Django - like rails with more configuration, written by a media company publishing news articles
-React
-Postgresql
-Stripe (and possibly paypal) apis for the bonus goal
+  * Django - like rails with more configuration, written by a media company publishing news articles
+  * React
+  * Postgresql
+  * Stripe (and possibly paypal) apis for the bonus goal
 
 # Project Flowchart (tbd)
 
