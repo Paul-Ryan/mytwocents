@@ -61,6 +61,15 @@ React.js/Redux
 ## Third-party payment (bonus)
  * Stripe
 
+# Accomplished over the Weekend
+
+ * All group members worked through the Django tutorial
+   * Installing Django
+   * Installing and enabling Python virtual environments
+ * First draft of the DB schema
+ * Hashed out how the app should actually work
+   * User stories created
+ * Preliminary division of responsibilities agreed upon
 
 # DB
 - users
