@@ -1,16 +1,21 @@
 # Background and Overview
 
-Being asked to write an article for “exposure” or for a very low payment
-is a problem many writers experience. We want to offer publications a
-way to give their writers an additional potential revenue source
-directly from their readers.
+Being asked to write an article for "exposure" or for a very low payment
+is a problem many writers experience. We want to offer
+
+1. Publications a way to give their writers an additional potential
+   revenue source directly from their readers.
+
+2. Independent authors (such as bloggers) with an easy way to solicit
+   contributions from their audience.
 
 My 2 Cents is an embeddable widget that will allow readers to offer
-authors small amounts of money, or "tips", with a very simple click (or
-a couple of clicks). My 2 Cents widget will be JavaScript code generated
-on a per-article bases and need to be embedded on each article page (or
-wherever--the functionality will be the same). Toggling a tip on our
-widget will represent a pledge to
+authors small amounts of money, or "tips", in an easy, low friction way.
+The My 2 Cents widget will be JavaScript code generated on a per-article
+bases. Authors or publications will embed that generated widget on their
+article pages. Logged in users will then be able to provide a small
+contribution to register their appreciation for the article by clicking
+on the widget. 
 
 # Functionality & MVP
 
@@ -44,7 +49,9 @@ widget will represent a pledge to
 
 
 # Widget Functionality
+
  * Toggles between paid or not paid (registers intent to pay)
+
  * Link to our site, which contains users accounts and signup forms
 
 
@@ -54,7 +61,7 @@ widget will represent a pledge to
     ** we will have a simple button, with an icon, that can toggle
        between the states: "tipped" and "not tipped"
 
-    ** the widgets will contain a link back to our site
+    ** the widget will contain a link back to our site
 
   * frontend interface (site)
 
