@@ -41,12 +41,11 @@ My 2 Cents is an embeddable widget that will allow readers to offer authors smal
   ** we will create actions to sent API requests to process payments at the end of a standard payment period
 
 # Technologies
-we are considering:
-Google Firebase
+We will be using:
 Django - like rails with more configuration, written by a media company publishing news articles
 React
 Postgresql
-node js
+Stripe (and possibly paypal) apis for the bonus goal
 
 # Project Flowchart (tbd)
 
@@ -62,6 +61,33 @@ React.js/Redux
 ## Third-party payment (bonus)
  * Stripe
 
+# Accomplished over the Weekend
+
+ * All group members worked through the Django tutorial
+   * Installing Django
+   * Installing and enabling Python virtual environments
+ * First draft of the DB schema
+ * Hashed out how the app should actually work
+   * User stories created
+ * Preliminary division of responsibilities agreed upon
+
+# Group Members & Work Breakdown
+Brian Taylor Vann (BVT), Brian van den Broek (BvdB), Paul Ryan (PR) and
+Alexey Spiridonov (AS)
+
+## Day 1
+
+## Day 2
+
+## Day 3
+
+## Day 4
+
+## Day 5
+
+## Day 6
+
+## Day 7
 
 # DB
 - users
