@@ -71,6 +71,24 @@ React.js/Redux
    * User stories created
  * Preliminary division of responsibilities agreed upon
 
+# Group Members & Work Breakdown
+Brian Taylor Vann (BVT), Brian van den Broek (BvdB), Paul Ryan (PR) and
+Alexey Spiridonov (AS)
+
+## Day 1
+
+## Day 2
+
+## Day 3
+
+## Day 4
+
+## Day 5
+
+## Day 6
+
+## Day 7
+
 # DB
 - users
 - articles
