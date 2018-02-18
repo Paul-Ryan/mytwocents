@@ -1,0 +1,16 @@
+{
+  user: {
+    id: 1,
+    user_name: 'john',
+    email: 'john.smith@company.com'
+    account_balance: 9.56,
+    session_token: 'sdfi9%$&#@^%$475',
+  },
+  author: {
+    author_id: 23,
+  },
+  article: {
+    id: 45,
+    title : 'How to write a good article',
+  }
+}
