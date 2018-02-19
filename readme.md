@@ -53,6 +53,7 @@ on the widget.
  * Link to our site, which contains users accounts and signup forms
 
 
+
 # UX
   * frontend interface (widget)
 
@@ -61,7 +62,13 @@ on the widget.
 
     * the widget will contain a link back to our site
 
+      ![wireframe of example article with widget](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/example_article_wireframe.png)
+
   * frontend interface (site)
+
+    * an about/landing page
+
+      ![wireframe of landing page](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/about_my2c_wireframe.png)
 
     * account creation
 
@@ -96,6 +103,8 @@ on the widget.
       If we use a distinct page for the form, the instructions could be
       there. If we use a modal, there could be a link to an instructions
       page.
+
+      ![wireframe of widget generation form](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/widget_generation_wireframe.png)
 
   * backend
 
