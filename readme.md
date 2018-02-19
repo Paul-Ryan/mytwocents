@@ -2,10 +2,8 @@
 
 Being asked to write an article for "exposure" or for a very low payment
 is a problem many writers experience. We want to offer
-
 1. Publications a way to give their writers an additional potential
    revenue source directly from their readers.
-
 2. Independent authors (such as bloggers) with an easy way to solicit
    contributions from their audience.
 
@@ -15,7 +13,7 @@ The My 2 Cents widget will be JavaScript code generated on a per-article
 bases. Authors or publications will embed that generated widget on their
 article pages. Logged in users will then be able to provide a small
 contribution to register their appreciation for the article by clicking
-on the widget. 
+on the widget.
 
 # Functionality & MVP
 
@@ -58,28 +56,56 @@ on the widget.
 # UX
   * frontend interface (widget)
 
-    ** we will have a simple button, with an icon, that can toggle
+    * we will have a simple button, with an icon, that can toggle
        between the states: "tipped" and "not tipped"
 
-    ** the widget will contain a link back to our site
+    * the widget will contain a link back to our site
 
   * frontend interface (site)
 
-    ** account creation
+    * account creation
 
-    ** User pages display links to articles they have pledged to
-       support, links to those articles, and if the payment has been
-       completed
+    * User Dashboard, showing
+      - Balance available to tip authors,
+      - Button (?) or other means to add fund to tip out balance
+      - Pending tips with ability to cancel
+      - History of tips paid out
+
+    * Author Dashboard, showing
+      - List of articles for which the author has generated widgets
+      - For each article, total $ actually tipped to that article
+        (processed out of User accounts, no longer pending, but not
+        necessarily paid out to the author, yet)
+      - Total funds paid out to the author
+      - Total of actually processed tips that have not yet been paid out
+        to the author (this may be above the author’s payout threshold
+        if they have crossed the threshold since the last payout
+        processing cycle).
+
+    * Widget Generation Form
+
+      Might be a modal on Author Dashboard, might be a distinct page.
+
+      A form in which a logged in author enters an article title and is
+      presented with some JS code to paste into their website to embed
+      a my2c widget. The widget code generated will be a function of the
+      author and the title; if the same author generates a widget for
+      the same title twice, they will get the same JS code.
+
+      There will also be some instructions for how to deploy the widget.
+      If we use a distinct page for the form, the instructions could be
+      there. If we use a modal, there could be a link to an instructions
+      page.
 
   * backend
 
-    ** our backend will be a standard Django build
+    * our backend will be a standard Django build
 
-    ** toggling our widget to tipped will send a request to our database
+    * toggling our widget to tipped will send a request to our database
        to create a record of an association between a User (that clicked
        the widget) and an Article ID.
 
-    ** we will create actions to sent API requests to process payments
+    * we will create actions to sent API requests to process payments
        at the end of a standard payment period
 
 # Technologies
