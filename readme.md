@@ -188,31 +188,33 @@ Alexey Spiridonov (AS)
 ## Day 2
 
  * Implement cookies for persistent login (AS)
- * Develop mock page with Article samples
+ * Develop mock page with Article samples (AS)
  
 ## Day 3
 
  * Visual Design of Widget (AS)
  * Widget Generation (PR)
- * Start Authentication implementation on backend and frontend
- * Start develop Sign up forms
+ * Start Authentication implementation on backend (BvdB, BTV) and frontend (AS, PR)
+ * Start develop Sign up forms (AS)
 
 ## Day 4
-* Finish Authentication on both sides
-* Start development and integration of Signup/SignIn in the embedded script
-* Create Dashboard for Users
-* Start developing Views on Django (users, ledge, dashboard, etc.)
+* Finish Authentication on both sides (group work)
+* Start development and integration of Signup/SignIn in the embedded script (AS, PR)
+* Create Dashboard for Users (PR)
+* Start developing Views on Django (users, ledge, dashboard, etc.) (BvdB, BTV)
 
 ## Day 5
-* Develop modal window functionality connected to toggle button (Sign in/Sign Up)
+* Develop modal window functionality connected to toggle button (Sign in/Sign Up) (AS, PR)
 
 ## Day 6
-* Implement toggle function 'Paid' and 'Cancel payment'
-* Develop AJAX get/post request from embedded script to keep cookies and button state updated
+* Implement toggle function 'Paid' and 'Cancel payment' (AS, PR)
+* Develop AJAX get/post request from embedded script to keep cookies and button state updated (AS, PR)
+* Support AJAX request on backend (BvdB, BTV)
 
 ## Day 7
-* End to end testing and polishing styling
-* Write README.md
+* End to end testing (group work)
+* Write README.md (BvdB)
+* Polishing styling (BTV, AS, PR)
 
 # DB
 - users
