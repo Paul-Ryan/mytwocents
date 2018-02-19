@@ -5,6 +5,7 @@
     <title>Article samples</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="./js/cookie_handler.js"></script>
   </head>
   <body>
     <div class="row">
@@ -39,7 +40,7 @@
               If you’re one of the many missing the feature, then it’s 
               definitely worth a look.
               <div class='author'>Author: Greg Lewinsky</div>
-              <button class='my2cents-button'>my 2¢</button>
+              <button onclick="setCookie('user_id',1,5)" class='my2cents-button'>my 2¢</button>
             </div>
           </li>
           <li class='article-item'>
@@ -70,7 +71,7 @@
               If you’re one of the many missing the feature, then it’s 
               definitely worth a look.
               <div class='author'>Author: Greg Lewinsky</div>
-              <button class='my2cents-button'>my 2¢</button>
+              <button onclick="setCookie('article_id',321,3)" class='my2cents-button'>my 2¢</button>
             </div>
           </li>
           <li class='article-item'>
@@ -101,7 +102,7 @@
               If you’re one of the many missing the feature, then it’s 
               definitely worth a look.
               <div class='author'>Author: Greg Lewinsky</div>
-              <button class='my2cents-button'>my 2¢</button>
+              <button onclick="setCookie('article_id',123,5)" class='my2cents-button'>my 2¢</button>
             </div>
           </li>
         </ul>
