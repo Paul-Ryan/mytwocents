@@ -2,7 +2,9 @@
 
 DARWIN="Darwin"
 LINUX="Linux"
-INSTALL_BREW_COMMAND = "/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
+INSTALL_BREW_COMMAND="/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
+DIR="`dirname ${BASH_SOURCE[0]} && pwd`"
+PARENT_DIR="`cd $DIR && cd .. && pwd && cd $DIR`"
 
 OS="`uname`"
 echo "You are running $OS ..."
@@ -43,4 +45,4 @@ if [ "$OS" == "$DARWIN" ]; then
 fi
 
 echo "Creating virtual environment ..."
-python3 -m venv ../my_two_cents_env
+# python3 -m venv ../my_two_cents
