@@ -42,8 +42,8 @@ on the widget.
  * users must be logged in for widget to work (cookie?)
  * learning to use Django
 
-![plan1](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/)
-![plan2](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/)
+![plan1](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/plan1)
+![plan2](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/plan2)
 
 
 # Widget Functionality
