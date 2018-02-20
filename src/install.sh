@@ -5,9 +5,11 @@ LINUX="Linux"
 INSTALL_BREW_COMMAND="/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
 DIR="`dirname ${BASH_SOURCE[0]} && pwd`"
 PARENT_DIR="`cd $DIR && cd .. && pwd && cd $DIR`"
+ENV_DIR="$PARENT_DIR/mtc_venv"
 
 OS="`uname`"
 echo "You are running $OS ..."
+# echo "$ENV_DIR"
 
 if [ "$OS" == "$LINUX" ]; then
   echo "Run Linux instructions ..."
@@ -30,19 +32,41 @@ if [ "$OS" == "$DARWIN" ]; then
       echo "Brew is already installed ..."
       echo "Updating brew ..."
       brew update
-      echo "Brew updated ..."
+      echo "Brew has been updated ..."
     else
-      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
       echo "Installing Brew ..."
       eval INSTALL_BREW_COMMAND
-      echo "Brew installed ..."
+      echo "Brew has been installed ..."
     fi
 
     # install python3
     echo "Installing Python3 ..."
     brew install python3
+    echo "Python3 has been installed ..."
   fi
 fi
 
 echo "Creating virtual environment ..."
-# python3 -m venv ../my_two_cents
+cd "$PARENT_DIR"
+python3 -m venv "$ENV_DIR"
+echo "Virtual environment has been created ..."
+
+echo "Activate virtual environment ..."
+# mkdir "mtc_venv"
+# cd "mtc_venv"
+# source "$ENV_DIR/bin/activate"
+echo "Virtual environment has been activated ..."
+
+echo "Installing Django, psycop2, dependencies ..."
+# do something
+# pip3 install django psycopg2
+echo "Django and dependencies have been installed to the virtual environment ..."
+
+echo "Installing React, Redux, Webpack, and Babel ..."
+# npm init -y
+# npm install --save webpack react react-dom react-router-dom redux react-redux babel-core babel-loader babel-preset-react babel-preset-env
+echo "React, Redux, Webpack, and Babel have been installed ..."
+
+echo "Creating PostgreSQL databases through Django ..."
+#
+echo "PostgreSQL databases have been created ..."
