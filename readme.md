@@ -72,7 +72,7 @@ on the widget.
 
     * account creation
 
-    ![acount creation page](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/account_creation.png)
+    ![account creation page](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/account_creation.png)
 
     * User Dashboard, showing
       - Balance available to tip authors,
@@ -93,7 +93,7 @@ on the widget.
         if they have crossed the threshold since the last payout
         processing cycle).
 
-    1[author dashboard](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/author_dashboard.png)    
+    ![author dashboard](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/author_dashboard.png)    
 
     * Widget Generation Form
 
