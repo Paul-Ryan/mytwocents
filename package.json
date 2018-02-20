@@ -1,0 +1,37 @@
+{
+  "name": "mytwocents",
+  "version": "1.0.0",
+  "description": "Being asked to write an article for \"exposure\" or for a very low payment is a problem many writers experience. We want to offer 1. Publications a way to give their writers an additional potential    revenue source directly from their readers. 2. Independent authors (such as bloggers) with an easy way to solicit    contributions from their audience.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "webpack": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul-Ryan/mytwocents.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paul-Ryan/mytwocents/issues"
+  },
+  "homepage": "https://github.com/Paul-Ryan/mytwocents#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {}
+}
