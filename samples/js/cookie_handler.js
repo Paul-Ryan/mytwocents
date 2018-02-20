@@ -1,7 +1,9 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log(decodeURIComponent(document.cookie));
+  // console.log(decodeURIComponent(document.cookie));
+  
+  setCookie('session_token',1234567890,1);
 });
 
 
@@ -32,6 +34,20 @@ const getCookie = (cookieName) => {
 };
 
 const setUserCookie = () => {
-  setCookie('user_id',1,5);
-  console.log(getCookie('user_id'));
+  setCookie('session_token',1234567890,1);
+};
+
+const setLocalStorage = () =>{
+  localStorage.setItem("lastname", "Smith");
+};
+
+const getUserCookie = () => {
+  // console.log(getCookie('sessionToken'));
+  const sessionToken = getCookie('session_token');
+  console.log(sessionToken);
+  if (sessionToken) {
+    alert('You already logged in');
+  } else {
+    alert('Please login');
+  }
 };
