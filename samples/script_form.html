@@ -2,21 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/script_form.css">
+
     <title>script form</title>
   </head>
   <body>
-    <div className="form-page">
-    <form onSubmit={this.handleSumit}>
-      <label>Id
-        <input
-          type="text"
-          value={this.state.id}
-          onChange={this.update('id')} />
-      </label>
-      <input type="submit" className="submit" value="Create Script"/>
-    </form>
+    <div class="form-page">
+      <h1>Create your My Two Cents button</h1>
+        <input id="id1" type="number" required>
+        <button onclick="buildScript()">
+          Create Script
+        </button>
 
-    <div className="script-container"></div>
+      <div id="script-container">
+      </div>
     </div>
+
+    <script>
+      function buildScript() {
+        let articleId = document.getElementById("id1");
+        console.log(articleId);
+        let scriptObj = document.getElementById("script-container");
+
+        scriptObj.innerHTML = "Script here";
+        // document.getElementById("script-container").innerHTML("hello")
+      }
+    </script>
+
   </body>
 </html>

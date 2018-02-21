@@ -1,0 +1,35 @@
+.form-page {
+  width: 500px;
+  margin: 20px auto 0;
+  background: lightgray;
+  padding: 20px;
+  text-align: center;
+  font: 400 16px sans-serif;
+  box-sizing: border-box;
+}
+
+.form-page > h1 {
+  font-size: 28px;
+}
+
+.form-page > input {
+  box-sizing: border-box;
+  height: 30px;
+  width: 465px;
+  margin: 20px 0 0;
+}
+
+.form-page > button {
+  box-sizing: border-box;
+  height: 30px;
+  width: 465px;
+  margin: 5px 0 0;
+}
+
+#script-container {
+  box-sizing: border-box;
+  width: 465px;
+  min-height: 40px;
+  border: 1px solid gray;
+  margin: 20px 0;
+}
