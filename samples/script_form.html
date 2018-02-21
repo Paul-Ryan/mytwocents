@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>script form</title>
+  </head>
+  <body>
+    <div className="form-page">
+    <form onSubmit={this.handleSumit}>
+      <label>Id
+        <input
+          type="text"
+          value={this.state.id}
+          onChange={this.update('id')} />
+      </label>
+      <input type="submit" className="submit" value="Create Script"/>
+    </form>
+
+    <div className="script-container"></div>
+    </div>
+  </body>
+</html>
