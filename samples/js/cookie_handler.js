@@ -1,9 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  // console.log(decodeURIComponent(document.cookie));
-  
-  setCookie('session_token',1234567890,1);
+  console.log(decodeURIComponent(document.cookie));
 });
 
 
@@ -41,13 +39,22 @@ const setLocalStorage = () =>{
   localStorage.setItem("lastname", "Smith");
 };
 
-const getUserCookie = () => {
-  // console.log(getCookie('sessionToken'));
+const getUserCookie = (reviewId) => {
   const sessionToken = getCookie('session_token');
   console.log(sessionToken);
   if (sessionToken) {
-    alert('You already logged in');
+    console.log('Your session_token: ' + sessionToken);
+    console.log("You're trying to pay for reivew: " + reviewId);
+    alert("You're trying to pay for reivew: " + reviewId);
   } else {
-    alert('Please login');
+    alert('Trying to fetch user data..');
+    setCookie('session_token',1234567890,1);
   }
 };
+
+
+// When user hits the widget button 
+// 1. check if there is a saved session_token
+// if session_token => pay money
+// else show modal window with information about the service
+// and let user to sign in
