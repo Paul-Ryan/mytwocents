@@ -45,9 +45,9 @@ const getUserCookie = (reviewId) => {
   if (sessionToken) {
     console.log('Your session_token: ' + sessionToken);
     console.log("You're trying to pay for reivew: " + reviewId);
-    alert("You're trying to pay for reivew: " + reviewId);
+    // alert("You're trying to pay for reivew: " + reviewId);
   } else {
-    alert('Trying to fetch user data..');
+    console.log('Trying to fetch user data..');
     setCookie('session_token',1234567890,1);
   }
 };

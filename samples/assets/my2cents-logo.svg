@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="525" height="522" viewBox="0 0 525 522">
+  <defs>
+    <circle id="my2cents-logo-b" cx="262" cy="261" r="256"/>
+    <filter id="my2cents-logo-a" width="103.9%" height="103.9%" x="-1.6%" y="-1.6%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="3" result="shadowSpreadOuter1"/>
+      <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology in="SourceAlpha" radius="3" result="shadowInner"/>
+      <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.245697464 0"/>
+    </filter>
+    <path id="my2cents-logo-d" d="M0,222.346154 C0,222.346154 38.395415,205.929413 91.1504425,209.692308 C162.31592,214.768377 259.333427,235 320.849558,235 C351.064802,235 412,222.346154 412,222.346154 L412,12.6538462 C412,12.6538462 373.308177,29.050861 320.849558,25.3076923 C249.569396,20.2215183 152.682367,0 91.1504425,0 C60.6334405,0 0,12.6538462 0,12.6538462 L0,222.346154 Z"/>
+    <filter id="my2cents-logo-c" width="113.6%" height="123.8%" x="-6.8%" y="-8.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.253481658 0"/>
+    </filter>
+    <filter id="my2cents-logo-e" width="162.5%" height="233.3%" x="-31.2%" y="-33.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251500226 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="my2cents-logo-f" width="169%" height="242.9%" x="-34.5%" y="-35.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251500226 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="my2cents-logo-g" width="164.5%" height="233.3%" x="-32.3%" y="-33.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251500226 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="my2cents-logo-h" width="165.6%" height="237.9%" x="-32.8%" y="-34.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251500226 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="my2cents-logo-i" width="154.7%" height="252.6%" x="-27.4%" y="-55.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.249433877 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="my2cents-logo-j" d="M0.523841634,23.2762714 C0.523841634,30.9893493 23.9714104,37.2420343 52.8954524,37.2420343 C81.8194943,37.2420343 105.267063,30.9893493 105.267063,23.2762714 L105.267063,13.9657629 L91.9316189,13.9657629 C82.3420182,11.1086035 68.4061745,9.31050858 52.8954524,9.31050858 C37.3847303,9.31050858 23.4488866,11.1086035 13.8592859,13.9657629 L0.523841634,13.9657629 L0.523841634,23.2762714 Z"/>
+    <filter id="my2cents-logo-k" width="107.6%" height="128.6%" x="-3.8%" y="-7.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0979110054 0"/>
+    </filter>
+    <path id="my2cents-logo-l" d="M1.16381357,23.2762714 C1.16381357,30.9893493 24.6113824,37.2420343 53.5354243,37.2420343 C82.4594663,37.2420343 105.907035,30.9893493 105.907035,23.2762714 L105.907035,13.9657629 L92.5715909,13.9657629 C82.9819901,11.1086035 69.0461464,9.31050858 53.5354243,9.31050858 C38.0247022,9.31050858 24.0888585,11.1086035 14.4992578,13.9657629 L1.16381357,13.9657629 L1.16381357,23.2762714 Z"/>
+    <filter id="my2cents-logo-m" width="107.6%" height="128.6%" x="-3.8%" y="-7.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0979110054 0"/>
+    </filter>
+    <path id="my2cents-logo-n" d="M1.16381357,23.2762714 C1.16381357,30.9893493 24.6113824,37.2420343 53.5354243,37.2420343 C82.4594663,37.2420343 105.907035,30.9893493 105.907035,23.2762714 L105.907035,13.9657629 L92.5715909,13.9657629 C82.9819901,11.1086035 69.0461464,9.31050858 53.5354243,9.31050858 C38.0247022,9.31050858 24.0888585,11.1086035 14.4992578,13.9657629 L1.16381357,13.9657629 L1.16381357,23.2762714 Z"/>
+    <filter id="my2cents-logo-o" width="107.6%" height="128.6%" x="-3.8%" y="-7.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0979110054 0"/>
+    </filter>
+    <path id="my2cents-logo-p" d="M1.16381357,23.2762714 C1.16381357,30.9893493 24.6113824,37.2420343 53.5354243,37.2420343 C82.4594663,37.2420343 105.907035,30.9893493 105.907035,23.2762714 L105.907035,13.9657629 L92.5715909,13.9657629 C82.9819901,11.1086035 69.0461464,9.31050858 53.5354243,9.31050858 C38.0247022,9.31050858 24.0888585,11.1086035 14.4992578,13.9657629 L1.16381357,13.9657629 L1.16381357,23.2762714 Z"/>
+    <filter id="my2cents-logo-q" width="107.6%" height="128.6%" x="-3.8%" y="-7.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0979110054 0"/>
+    </filter>
+    <path id="my2cents-logo-r" d="M1.16381357,23.2762714 C1.16381357,30.9893493 24.6113824,37.2420343 53.5354243,37.2420343 C82.4594663,37.2420343 105.907035,30.9893493 105.907035,23.2762714 L105.907035,13.9657629 L92.5715909,13.9657629 C82.9819901,11.1086035 69.0461464,9.31050858 53.5354243,9.31050858 C38.0247022,9.31050858 24.0888585,11.1086035 14.4992578,13.9657629 L1.16381357,13.9657629 L1.16381357,23.2762714 Z"/>
+    <filter id="my2cents-logo-s" width="107.6%" height="128.6%" x="-3.8%" y="-7.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0979110054 0"/>
+    </filter>
+    <path id="my2cents-logo-t" d="M1.16381357,23.2762714 C1.16381357,30.9893493 24.6113824,37.2420343 53.5354243,37.2420343 C82.4594663,37.2420343 105.907035,30.9893493 105.907035,23.2762714 L105.907035,13.9657629 L92.5715909,13.9657629 C82.9819901,11.1086035 69.0461464,9.31050858 53.5354243,9.31050858 C38.0247022,9.31050858 24.0888585,11.1086035 14.4992578,13.9657629 L1.16381357,13.9657629 L1.16381357,23.2762714 Z"/>
+    <filter id="my2cents-logo-u" width="107.6%" height="128.6%" x="-3.8%" y="-7.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0979110054 0"/>
+    </filter>
+    <path id="my2cents-logo-v" d="M1.16381357,23.2762714 C1.16381357,30.9893493 24.6113824,37.2420343 53.5354243,37.2420343 C82.4594663,37.2420343 105.907035,30.9893493 105.907035,23.2762714 L105.907035,13.9657629 L92.5715909,13.9657629 C82.9819901,11.1086035 69.0461464,9.31050858 53.5354243,9.31050858 C38.0247022,9.31050858 24.0888585,11.1086035 14.4992578,13.9657629 L1.16381357,13.9657629 L1.16381357,23.2762714 Z"/>
+    <filter id="my2cents-logo-w" width="107.6%" height="128.6%" x="-3.8%" y="-7.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0979110054 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#my2cents-logo-a)" xlink:href="#my2cents-logo-b"/>
+    <use stroke="#35C474" stroke-width="6" xlink:href="#my2cents-logo-b"/>
+    <g transform="translate(56 132)">
+      <use fill="#000" filter="url(#my2cents-logo-c)" xlink:href="#my2cents-logo-d"/>
+      <use fill="#35C474" xlink:href="#my2cents-logo-d"/>
+      <path fill="#189A51" d="M320.990291,43.3272727 C343.425171,43.3272727 388.066012,36.9104531 388.066012,36.9104531 C391.346992,36.462216 394,38.7767003 394,42.0897916 L394,48.1829357 C394,51.4929609 391.339883,54.5495267 388.058462,55.0031182 C388.058462,55.0031182 343.477386,61.4181818 320.990291,61.4181818 C258.892092,61.4181818 164.795852,36.0909091 91.0097087,36.0909091 C66.2067279,36.0909091 23.9143063,44.072136 23.9143063,44.072136 C20.6430192,44.6532386 18,42.4505725 18,39.1374812 L18,33.044337 C18,29.7343119 20.6424425,26.5868016 23.9020606,26.0210246 C23.9020606,26.0210246 68.268019,18 91.0097087,18 C167.748628,18 244.251372,43.3272727 320.990291,43.3272727 Z M320.990291,198.909091 C343.425171,198.909091 388.091966,190.883682 388.091966,190.883682 C391.346992,190.32777 394,192.549428 394,195.862519 L394,201.955663 C394,205.265688 391.357306,208.411235 388.097377,208.974591 C388.097377,208.974591 343.477386,217 320.990291,217 C258.892092,217 164.795852,191.672727 91.0097087,191.672727 C62.5116808,191.672727 23.8905452,199.584013 23.8905452,199.584013 C20.6408093,200.19937 18,198.032391 18,194.719299 L18,188.626155 C18,185.31613 20.6383093,182.148805 23.8928288,181.558586 C23.8928288,181.558586 65.7735892,173.581818 91.0097087,173.581818 C167.748628,173.581818 244.251372,198.909091 320.990291,198.909091 Z M242.548989,133.691511 C238.155509,164.952747 218.23035,183.045799 198.0449,174.103474 C177.859451,165.16115 165.057531,132.569725 169.451011,101.308489 C173.844491,70.0472533 193.76965,51.954201 213.9551,60.8965257 C234.140549,69.8388503 246.942469,102.430275 242.548989,133.691511 Z"/>
+      <text fill="#4A4A4A" font-family="Phosphate-Inline, Phosphate" font-size="80">
+        <tspan x="37" y="137">My</tspan>
+      </text>
+      <text fill="#4A4A4A" font-family="Phosphate-Inline, Phosphate" font-size="150">
+        <tspan x="253" y="194"> ¢</tspan>
+      </text>
+      <text fill="#4A4A4A" font-family="Phosphate-Inline, Phosphate" font-size="100">
+        <tspan x="187" y="147">2</tspan>
+      </text>
+    </g>
+    <g transform="translate(122 44)">
+      <g filter="url(#my2cents-logo-e)" transform="rotate(-64 80.41 49.7)">
+        <path fill="#E4A51C" d="M0,20 C0,25.5228475 14.326888,30 32,30 C49.673112,30 64,25.5228475 64,20 L64,10 L0,10 L0,20 Z"/>
+        <ellipse cx="32" cy="10" fill="#FFD400" rx="32" ry="10"/>
+      </g>
+      <g filter="url(#my2cents-logo-f)" transform="rotate(-14 420.635 -314.068)">
+        <path fill="#E4A51C" d="M9.32538537e-15,18.5231676 C9.32538537e-15,23.6381991 12.9639548,27.7847514 28.9558035,27.7847514 C44.9476522,27.7847514 57.9116069,23.6381991 57.9116069,18.5231676 L57.9116069,9.2615838 L9.32538537e-15,9.2615838 L9.32538537e-15,18.5231676 Z"/>
+        <ellipse cx="28.956" cy="9.262" fill="#FFD400" rx="28.956" ry="9.262"/>
+      </g>
+      <g filter="url(#my2cents-logo-g)" transform="rotate(45 27.547 369.777)">
+        <path fill="#E4A51C" d="M-1.21053103e-13,19.5500752 C-1.21053103e-13,24.9486794 13.7294968,29.3251128 30.6656894,29.3251128 C47.6018819,29.3251128 61.3313787,24.9486794 61.3313787,19.5500752 L61.3313787,9.77503759 L-1.21053103e-13,9.77503759 L-1.21053103e-13,19.5500752 Z"/>
+        <ellipse cx="30.666" cy="9.775" fill="#FFD400" rx="30.666" ry="9.775"/>
+      </g>
+      <g filter="url(#my2cents-logo-h)" transform="rotate(64 85.052 136.999)">
+        <path fill="#E4A51C" d="M4.22771381e-14,18.750315 C4.22771381e-14,23.9280715 13.4535125,28.1254724 30.0492611,28.1254724 C46.6450097,28.1254724 60.0985222,23.9280715 60.0985222,18.750315 L60.0985222,9.37515748 L4.22771381e-14,9.37515748 L4.22771381e-14,18.750315 Z"/>
+        <ellipse cx="30.049" cy="9.375" fill="#FFD400" rx="30.049" ry="9.375"/>
+      </g>
+    </g>
+    <g transform="translate(202 382)">
+      <g filter="url(#my2cents-logo-i)" transform="translate(10.596 71.508)">
+        <use fill="#000" filter="url(#my2cents-logo-k)" xlink:href="#my2cents-logo-j"/>
+        <use fill="#E4A51C" xlink:href="#my2cents-logo-j"/>
+        <ellipse cx="52.895" cy="13.966" fill="#FFD400" rx="52.372" ry="13.966"/>
+        <path fill="#E4A51C" d="M52.8954524,25.6038986 C77.3201989,25.6038986 97.1203681,20.3933277 97.1203681,13.9657629 C97.1203681,7.53819799 77.3201989,2.32762714 52.8954524,2.32762714 C28.4707059,2.32762714 8.67053664,7.53819799 8.67053664,13.9657629 C8.67053664,20.3933277 28.4707059,25.6038986 52.8954524,25.6038986 Z M52.8954524,24.440085 C75.3919295,24.440085 93.6289274,19.7505713 93.6289274,13.9657629 C93.6289274,8.18095448 75.3919295,3.49144072 52.8954524,3.49144072 C30.3989753,3.49144072 12.1619774,8.18095448 12.1619774,13.9657629 C12.1619774,19.7505713 30.3989753,24.440085 52.8954524,24.440085 Z"/>
+      </g>
+      <g transform="translate(.646 58.706)">
+        <use fill="#000" filter="url(#my2cents-logo-m)" xlink:href="#my2cents-logo-l"/>
+        <use fill="#E4A51C" xlink:href="#my2cents-logo-l"/>
+        <ellipse cx="53.535" cy="13.966" fill="#FFD400" rx="52.372" ry="13.966"/>
+        <path fill="#E4A51C" d="M53.5354243,25.6038986 C77.9601709,25.6038986 97.7603401,20.3933277 97.7603401,13.9657629 C97.7603401,7.53819799 77.9601709,2.32762714 53.5354243,2.32762714 C29.1106778,2.32762714 9.31050858,7.53819799 9.31050858,13.9657629 C9.31050858,20.3933277 29.1106778,25.6038986 53.5354243,25.6038986 Z M53.5354243,24.440085 C76.0319014,24.440085 94.2688994,19.7505713 94.2688994,13.9657629 C94.2688994,8.18095448 76.0319014,3.49144072 53.5354243,3.49144072 C31.0389473,3.49144072 12.8019493,8.18095448 12.8019493,13.9657629 C12.8019493,19.7505713 31.0389473,24.440085 53.5354243,24.440085 Z"/>
+      </g>
+      <g transform="translate(8.792 48.232)">
+        <use fill="#000" filter="url(#my2cents-logo-o)" xlink:href="#my2cents-logo-n"/>
+        <use fill="#E4A51C" xlink:href="#my2cents-logo-n"/>
+        <ellipse cx="53.535" cy="13.966" fill="#FFD400" rx="52.372" ry="13.966"/>
+        <path fill="#E4A51C" d="M53.5354243,25.6038986 C77.9601709,25.6038986 97.7603401,20.3933277 97.7603401,13.9657629 C97.7603401,7.53819799 77.9601709,2.32762714 53.5354243,2.32762714 C29.1106778,2.32762714 9.31050858,7.53819799 9.31050858,13.9657629 C9.31050858,20.3933277 29.1106778,25.6038986 53.5354243,25.6038986 Z M53.5354243,24.440085 C76.0319014,24.440085 94.2688994,19.7505713 94.2688994,13.9657629 C94.2688994,8.18095448 76.0319014,3.49144072 53.5354243,3.49144072 C31.0389473,3.49144072 12.8019493,8.18095448 12.8019493,13.9657629 C12.8019493,19.7505713 31.0389473,24.440085 53.5354243,24.440085 Z"/>
+      </g>
+      <g transform="translate(12.284 36.594)">
+        <use fill="#000" filter="url(#my2cents-logo-q)" xlink:href="#my2cents-logo-p"/>
+        <use fill="#E4A51C" xlink:href="#my2cents-logo-p"/>
+        <ellipse cx="53.535" cy="13.966" fill="#FFD400" rx="52.372" ry="13.966"/>
+        <path fill="#E4A51C" d="M53.5354243,25.6038986 C77.9601709,25.6038986 97.7603401,20.3933277 97.7603401,13.9657629 C97.7603401,7.53819799 77.9601709,2.32762714 53.5354243,2.32762714 C29.1106778,2.32762714 9.31050858,7.53819799 9.31050858,13.9657629 C9.31050858,20.3933277 29.1106778,25.6038986 53.5354243,25.6038986 Z M53.5354243,24.440085 C76.0319014,24.440085 94.2688994,19.7505713 94.2688994,13.9657629 C94.2688994,8.18095448 76.0319014,3.49144072 53.5354243,3.49144072 C31.0389473,3.49144072 12.8019493,8.18095448 12.8019493,13.9657629 C12.8019493,19.7505713 31.0389473,24.440085 53.5354243,24.440085 Z"/>
+      </g>
+      <g transform="translate(2.973 26.12)">
+        <use fill="#000" filter="url(#my2cents-logo-s)" xlink:href="#my2cents-logo-r"/>
+        <use fill="#E4A51C" xlink:href="#my2cents-logo-r"/>
+        <ellipse cx="53.535" cy="13.966" fill="#FFD400" rx="52.372" ry="13.966"/>
+        <path fill="#E4A51C" d="M53.5354243,25.6038986 C77.9601709,25.6038986 97.7603401,20.3933277 97.7603401,13.9657629 C97.7603401,7.53819799 77.9601709,2.32762714 53.5354243,2.32762714 C29.1106778,2.32762714 9.31050858,7.53819799 9.31050858,13.9657629 C9.31050858,20.3933277 29.1106778,25.6038986 53.5354243,25.6038986 Z M53.5354243,24.440085 C76.0319014,24.440085 94.2688994,19.7505713 94.2688994,13.9657629 C94.2688994,8.18095448 76.0319014,3.49144072 53.5354243,3.49144072 C31.0389473,3.49144072 12.8019493,8.18095448 12.8019493,13.9657629 C12.8019493,19.7505713 31.0389473,24.440085 53.5354243,24.440085 Z"/>
+      </g>
+      <g transform="translate(7.628 13.318)">
+        <use fill="#000" filter="url(#my2cents-logo-u)" xlink:href="#my2cents-logo-t"/>
+        <use fill="#E4A51C" xlink:href="#my2cents-logo-t"/>
+        <ellipse cx="53.535" cy="13.966" fill="#FFD400" rx="52.372" ry="13.966"/>
+        <path fill="#E4A51C" d="M53.5354243,25.6038986 C77.9601709,25.6038986 97.7603401,20.3933277 97.7603401,13.9657629 C97.7603401,7.53819799 77.9601709,2.32762714 53.5354243,2.32762714 C29.1106778,2.32762714 9.31050858,7.53819799 9.31050858,13.9657629 C9.31050858,20.3933277 29.1106778,25.6038986 53.5354243,25.6038986 Z M53.5354243,24.440085 C76.0319014,24.440085 94.2688994,19.7505713 94.2688994,13.9657629 C94.2688994,8.18095448 76.0319014,3.49144072 53.5354243,3.49144072 C31.0389473,3.49144072 12.8019493,8.18095448 12.8019493,13.9657629 C12.8019493,19.7505713 31.0389473,24.440085 53.5354243,24.440085 Z"/>
+      </g>
+      <g transform="translate(4.137 .516)">
+        <use fill="#000" filter="url(#my2cents-logo-w)" xlink:href="#my2cents-logo-v"/>
+        <use fill="#E4A51C" xlink:href="#my2cents-logo-v"/>
+        <ellipse cx="53.535" cy="13.966" fill="#FFD400" rx="52.372" ry="13.966"/>
+        <path fill="#E4A51C" d="M53.5354243,25.6038986 C77.9601709,25.6038986 97.7603401,20.3933277 97.7603401,13.9657629 C97.7603401,7.53819799 77.9601709,2.32762714 53.5354243,2.32762714 C29.1106778,2.32762714 9.31050858,7.53819799 9.31050858,13.9657629 C9.31050858,20.3933277 29.1106778,25.6038986 53.5354243,25.6038986 Z M53.5354243,24.440085 C76.0319014,24.440085 94.2688994,19.7505713 94.2688994,13.9657629 C94.2688994,8.18095448 76.0319014,3.49144072 53.5354243,3.49144072 C31.0389473,3.49144072 12.8019493,8.18095448 12.8019493,13.9657629 C12.8019493,19.7505713 31.0389473,24.440085 53.5354243,24.440085 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

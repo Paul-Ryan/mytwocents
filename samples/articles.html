@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Article samples</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="./js/cookie_handler.js"></script>
   </head>
   <body>
@@ -41,7 +43,7 @@
               definitely worth a look.
               <div class='author'>Author: Greg Lewinsky</div>
               <div id='987654321'>
-                <button onclick="getUserCookie(987654321)" class='my2cents-button'>2¢</button>
+                <button onclick="getUserCookie(987654321)" class='my2cents-button js-modal-open'>2¢</button>
               </div>
             </div>
           </li>
@@ -73,7 +75,7 @@
               If you’re one of the many missing the feature, then it’s 
               definitely worth a look.
               <div class='author'>Author: Greg Lewinsky</div>
-              <button onclick="getUserCookie(49579347697)" class='my2cents-button'>2¢</button>
+              <button onclick="getUserCookie(49579347697)" class='my2cents-button js-modal-open'>2¢</button>
             </div>
           </li>
           <li class='article-item'>
@@ -104,13 +106,54 @@
               If you’re one of the many missing the feature, then it’s 
               definitely worth a look.
               <div class='author'>Author: Greg Lewinsky</div>
-              <button onclick="getUserCookie(349057902045)" class='my2cents-button'>2¢</button>
+              <button onclick="getUserCookie(349057902045)" class='my2cents-button js-modal-open'>2¢</button>
               <!-- <button class="coin gold"><p>2¢</p></button> -->
             </div>
           </li>
         </ul>
       </div>
-
     </div>
+    <div class="modal">
+    <form class="modal-form">
+
+      <span class="modal-close js-modal-close">&times;</span>
+
+      <div class="about">
+        <img src="./assets/my2cents-logo.svg" alt="">
+        <p>My 2 Cents is an embeddable widget that will allow readers to offer authors 
+          small amounts of money, or "tips", in an easy, low friction way. 
+          The My 2 Cents widget will be JavaScript code generated on a per-article bases. 
+          Authors or publications will embed that generated widget on their article pages. 
+          Logged in users will then be able to provide a small contribution to register 
+          their appreciation for the article by clicking on the widget.</p>
+      </div>
+      <h1>Please sign in to continue</h1>
+
+      <div class="input">
+        <input type="text" value="" placeholder="Email">
+        <input type="password" value="" placeholder="Password">
+      </div>
+
+      <div class="submit">
+        <p>Doesn't have an account?</p>&nbsp;<p class='signup'>Sign Up</p>
+        <button>Sign In</button>
+      </div>
+
+    </form>
+    <div class="modal-screen js-modal-close"></div>
+  </div>
+
+ <script>
+  $(function(){
+    $("body").on("click", ".js-modal-open", function(event){
+      event.preventDefault();
+      $(".modal").addClass("is-open");
+    });
+    $("body").on("click", ".js-modal-close", function(event){
+      event.preventDefault();
+      $(".modal").removeClass("is-open");
+    });
+  });
+  </script>
   </body>
 </html>
