@@ -3,33 +3,43 @@
   margin: 20px auto 0;
   background: lightgray;
   padding: 20px;
-  text-align: center;
   font: 400 16px sans-serif;
   box-sizing: border-box;
 }
 
 .form-page > h1 {
   font-size: 28px;
+  width: 100%;
+  text-align: center;
+}
+
+.script-generator {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+  width: 100%;
+  margin: 15px 0 4px;
+  padding-left: 10px;
 }
 
 .form-page > input {
   box-sizing: border-box;
   height: 30px;
   width: 465px;
-  margin: 20px 0 0;
+  margin: 0;
 }
 
 .form-page > button {
   box-sizing: border-box;
   height: 30px;
-  width: 465px;
+  width: 80px;
   margin: 5px 0 0;
 }
 
 #script-container {
   box-sizing: border-box;
   width: 465px;
-  min-height: 40px;
+  min-height: 200px;
   border: 1px solid gray;
-  margin: 20px 0;
+  margin: 0;
 }

@@ -8,12 +8,13 @@
   </head>
   <body>
     <div class="form-page">
-      <h1>Create your My Two Cents button</h1>
-        <input id="id1" type="number" required>
+      <h1>Create your Tip Jar</h1>
+        <label for="article_id" class="script-generator">Article Id</label>
+        <input id="article_id" type="number" required placeholder="100">
         <button onclick="buildScript()">
-          Create Script
+          Create
         </button>
-
+      <h2 for="script-container" class="script-generator">Put this script in your article page's HTML</h2>
       <div id="script-container">
       </div>
     </div>
@@ -25,7 +26,6 @@
         let scriptObj = document.getElementById("script-container");
 
         scriptObj.innerHTML = "Script here";
-        // document.getElementById("script-container").innerHTML("hello")
       }
     </script>
 
