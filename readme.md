@@ -62,21 +62,25 @@ on the widget.
 
     * the widget will contain a link back to our site
 
-      ![wireframe of example article with widget](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/example_article_wireframe.png)
+      ![wireframe of example article with widget](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/demo_article_page.png)
 
   * frontend interface (site)
 
     * an about/landing page
 
-      ![wireframe of landing page](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/about_my2c_wireframe.png)
+      ![wireframe of landing page](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/homepage.png)
 
     * account creation
+
+    ![account creation page](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/account_creation.png)
 
     * User Dashboard, showing
       - Balance available to tip authors,
       - Button (?) or other means to add fund to tip out balance
       - Pending tips with ability to cancel
       - History of tips paid out
+
+    ![reader dashboard](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/reader_dashboard.png)
 
     * Author Dashboard, showing
       - List of articles for which the author has generated widgets
@@ -88,6 +92,8 @@ on the widget.
         to the author (this may be above the author’s payout threshold
         if they have crossed the threshold since the last payout
         processing cycle).
+
+    ![author dashboard](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/author_dashboard.png)    
 
     * Widget Generation Form
 
@@ -104,7 +110,7 @@ on the widget.
       there. If we use a modal, there could be a link to an instructions
       page.
 
-      ![wireframe of widget generation form](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/widget_generation_wireframe.png)
+      ![wireframe of widget generation form](https://github.com/Paul-Ryan/mytwocents/blob/master/docs/mockups/widget_generator.png)
 
   * backend
 
@@ -189,7 +195,7 @@ Alexey Spiridonov (AS)
 
  * Implement cookies for persistent login (AS)
  * Develop mock page with Article samples (AS)
- 
+
 ## Day 3
 
  * Visual Design of Widget (AS)

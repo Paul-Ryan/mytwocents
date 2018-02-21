@@ -20,6 +20,7 @@
 .DS_Store
 npm_debug.log
 
+
 # Ignore python virtual environment
 /mtc_venv
 
@@ -44,3 +45,7 @@ tests/coverage_html/
 tests/.coverage
 build/
 tests/report/
+
+bundle.js
+bundle.js.map
+project_notes
