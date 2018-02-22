@@ -3,21 +3,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log(decodeURIComponent(document.cookie));
   addModalWindow();
-  
 });
 
-// const showModal = () => {
-//   document.querySelector(".js-modal-open").onClick = () => {
-//     const modal = document.getElementById('modal');
-//     modal.classList.add('is-open');
-//     console.log(modal);
-//   };
-// };
+
+const showModal = () => {
+  const modal = document.getElementById('modal');
+  modal.classList.add('is-open');
+};
+
 const closeModal = () => {
-  document.querySelector(".js-modal-close").onClick = () => {
     const modal = document.getElementById('modal');
-    modal.classList.removeClass('is-open');
-  };
+    modal.classList.remove('is-open');
+    console.log(modal);
 };
 
 
@@ -66,14 +63,13 @@ const setLocalStorage = () =>{
 };
 
 const getUserCookie = (reviewId) => {
-  const modal = document.getElementById('modal');
   const sessionToken = getCookie('session_token');
   console.log(sessionToken);
   if (sessionToken) {
     console.log('Your session_token: ' + sessionToken);
     console.log("You're trying to pay for article: " + reviewId);
   } else {
-    modal.classList.add('is-open');
+    showModal();
     // console.log('Trying to fetch user data..');
     setCookie('session_token',1234567890,1);
   }
@@ -91,6 +87,7 @@ const addModalWindow = () => {
   span.classList.add('modal-close');
   span.classList.add('js-modal-close">');
   span.innerHTML = '&times;';
+  span.onclick =  closeModal;
   form.appendChild(span);
   const about = document.createElement('div');
   about.classList.add('about');
@@ -98,4 +95,42 @@ const addModalWindow = () => {
   const img = document.createElement('img');
   img.src = './assets/my2cents-logo.svg';
   about.appendChild(img);
+  const paragraph = document.createElement('p');
+  paragraph.innerHTML = "My 2 Cents is an embeddable widget that will allow readers to offer authors small amounts of money, or tips, in an easy, low friction way."+
+  "The My 2 Cents widget will be JavaScript code generated on a per-article bases."+
+  "Authors or publications will embed that generated widget on their article pages."+
+  "Logged in users will then be able to provide a small contribution to register"+
+  "their appreciation for the article by clicking on the widget."
+  about.appendChild(paragraph);
+  const input = document.createElement('div');
+  input.classList.add('input');
+  form.appendChild(input);
+  const h1 = document.createElement('h1');
+  h1.innerHTML = 'Please sign in to continue';
+  input.appendChild(h1);
+  const emailInput = document.createElement('input');
+  emailInput.type = 'text';
+  emailInput.placeholder = 'Email';
+  input.appendChild(emailInput);
+  
+  const PasswordInput = document.createElement('input');
+  PasswordInput.type = 'Password';
+  PasswordInput.placeholder = 'Password';
+  input.appendChild(PasswordInput);
+  
+  const submitDiv = document.createElement('div');
+  submitDiv.classList.add('submit');
+  form.appendChild(submitDiv);
+  const question = document.createElement('p');
+  question.innerHTML = "Doesn't have an account?&nbsp;";
+  submitDiv.appendChild(question);
+  const signup = document.createElement('p');
+  signup.classList.add('signup');
+  signup.innerHTML = 'Sign Up';
+  submitDiv.appendChild(signup);
+  const signIn = document.createElement('button');
+  signIn.innerHTML = 'Sign In';
+  submitDiv.appendChild(signIn);
+  // const closeDiv = document.createElement('div');
+  // closeDiv.classList.add('modal-screen');
 };
