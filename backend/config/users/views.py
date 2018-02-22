@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 import django.contrib.auth as auth
 
 from .utils import users_session_data
-from .forms import UserForm
+from .forms import UserForm, SessionForm
 
 # Create your views here.
 
@@ -29,16 +29,15 @@ def create(request):
                 password=password
             )
 
-            if user:
-                user.save()
-                auth.login(request, user)
+            user.save()
+            auth.login(request, user)
 
     return JsonResponse(users_session_data(request))
 
 
 def login(request):
     if request.method == 'POST' and not request.user.is_authenticated:
-        form = UserForm(request.POST['user'])
+        form = SessionForm(request.POST['user'])
 
         if form.is_valid():
             username = form.cleaned_data['username']
@@ -47,8 +46,8 @@ def login(request):
 
             user = auth.authenticate(
                 request,
-                username="brian",
-                password="password"
+                username=username,
+                password=password
             )
 
             if user:

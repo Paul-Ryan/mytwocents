@@ -1,6 +1,16 @@
+from django.forms import ModelForm
 from django import forms
 
-class UserForm(forms.Form):
-    username = forms.CharField(min_length=3, required=True)
+from django.contrib.auth.models import User
+
+
+class UserForm(ModelForm):
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password']
+
+class SessionForm(forms.Form):
+    username = forms.CharField(required=True)
     email = forms.EmailField(required=False)
-    password = forms.CharField(min_length=6, required=True)
+    password = forms.CharField(required=True)
