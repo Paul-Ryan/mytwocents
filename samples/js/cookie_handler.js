@@ -2,8 +2,34 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log(decodeURIComponent(document.cookie));
+  addModalWindow();
+  
 });
 
+// const showModal = () => {
+//   document.querySelector(".js-modal-open").onClick = () => {
+//     const modal = document.getElementById('modal');
+//     modal.classList.add('is-open');
+//     console.log(modal);
+//   };
+// };
+const closeModal = () => {
+  document.querySelector(".js-modal-close").onClick = () => {
+    const modal = document.getElementById('modal');
+    modal.classList.removeClass('is-open');
+  };
+};
+
+
+const addButton = (parentElementId,func) => {
+  const article = document.getElementById(parentElementId);
+  const button = document.createElement("button");
+  button.onclick = func;
+  button.innerHTML = '2¢';
+  button.classList.add("my2cents-button");
+  button.classList.add("js-modal-open");
+  article.appendChild(button); 
+};
 
 const setCookie = (name,value,days) => {
     var expires = "";
@@ -40,21 +66,36 @@ const setLocalStorage = () =>{
 };
 
 const getUserCookie = (reviewId) => {
+  const modal = document.getElementById('modal');
   const sessionToken = getCookie('session_token');
   console.log(sessionToken);
   if (sessionToken) {
     console.log('Your session_token: ' + sessionToken);
-    console.log("You're trying to pay for reivew: " + reviewId);
-    // alert("You're trying to pay for reivew: " + reviewId);
+    console.log("You're trying to pay for article: " + reviewId);
   } else {
-    console.log('Trying to fetch user data..');
+    modal.classList.add('is-open');
+    // console.log('Trying to fetch user data..');
     setCookie('session_token',1234567890,1);
   }
 };
 
-
-// When user hits the widget button 
-// 1. check if there is a saved session_token
-// if session_token => pay money
-// else show modal window with information about the service
-// and let user to sign in
+const addModalWindow = () => {
+  const modal = document.createElement('div');
+  modal.classList.add('modal');
+  modal.id = 'modal';
+  document.body.appendChild(modal);
+  const form = document.createElement("form");
+  form.classList.add("modal-form");
+  modal.appendChild(form);
+  const span = document.createElement('span');
+  span.classList.add('modal-close');
+  span.classList.add('js-modal-close">');
+  span.innerHTML = '&times;';
+  form.appendChild(span);
+  const about = document.createElement('div');
+  about.classList.add('about');
+  form.appendChild(about);
+  const img = document.createElement('img');
+  img.src = './assets/my2cents-logo.svg';
+  about.appendChild(img);
+};
