@@ -9,4 +9,4 @@ def session(request):
     if request.method == 'DELETE':
         return delete_session(request)
 
-    return session_data(request)
+#    return session_data(request)
