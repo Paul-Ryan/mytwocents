@@ -8,11 +8,13 @@ import {
   HashRouter
 } from 'react-router-dom';
 
+import GlobalNav from './nav_bar/nav_bar_container';
 import SplashPageContainer from './splash_page/splash_page_container';
 import UserPageContainer from './user_page/user_page_container';
 
 const App = () => (
   <div>
+    <GlobalNav />
     <Switch>
       <Route exact path="/" component={SplashPageContainer} />
       <Route exact path="/users/:userId" component={UserPageContainer} />
