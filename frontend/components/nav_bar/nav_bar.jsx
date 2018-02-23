@@ -3,10 +3,10 @@ import { Link, NavLink } from 'react-router-dom';
 import Modal from 'react-modal';
 import loginStyles from './login_form_styles';
 import signupStyles from './signup_form_styles';
-import SearchContainer from '../search/search_container';
+// import SearchContainer from '../search/search_container';
 
 class NavBar extends React.Component {
-  
+
   constructor(props){
     super(props);
     this.currentUser = this.props.currentUser;
@@ -26,23 +26,23 @@ class NavBar extends React.Component {
    this.handleSubmit = this.handleSubmit.bind(this);
    this.demoLogin = this.demoLogin.bind(this);
   }
-  
+
   handleInput(type) {
     return (e) => {
       this.setState({[type]: e.target.value});
     };
   }
-  
+
   handleLogin(e) {
     e.preventDefault();
     this.props.login(this.state);
   }
-  
+
   handleSubmit(e) {
     e.preventDefault();
     this.props.createNewUser(this.state);
   }
-  
+
   componentWillReceiveProps(nextProps) {
    if (nextProps.currentUser) {
      this.setState({modalIsOpen: false});
@@ -50,7 +50,7 @@ class NavBar extends React.Component {
      this.setState({errors: this.props.errors});
    }
  }
- 
+
  demoLogin(e) {
    e.preventDefault();
    this.setState({username:'bob'});
@@ -59,7 +59,7 @@ class NavBar extends React.Component {
      document.getElementById('login').click();
    },100);
  }
- 
+
  renderErrors() {
    return (
      <ul className='error'>
@@ -72,24 +72,24 @@ class NavBar extends React.Component {
      </ul>
    );
  }
-  
-  openModal(action) { 
+
+  openModal(action) {
     return (e) => {
       this.setState({modalIsOpen: true, action: action});
     };
   }
-  
+
   closeModal() {
      this.setState({modalIsOpen: false});
      this.props.clearErrors();
   }
-  
-  
+
+
   LoginWindow(){
     return (
       <div>
         <Modal
-          isOpen={this.state.modalIsOpen} 
+          isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={loginStyles}
@@ -111,7 +111,7 @@ class NavBar extends React.Component {
             <div className='submit'>
               <button onClick={this.demoLogin}>Demo</button>
               <button onClick={this.handleLogin} id='login'>Log In</button>
-            </div>  
+            </div>
           </form>
         </Modal>
       </div>
@@ -121,15 +121,15 @@ class NavBar extends React.Component {
   SignUpWindow() {
   return (
     <Modal
-      isOpen={this.state.modalIsOpen} 
+      isOpen={this.state.modalIsOpen}
       onAfterOpen={this.afterOpenModal}
       onRequestClose={this.closeModal}
       style={signupStyles}
       contentLabel="Signup Window"
       ariaHideApp={false} >
-      <span onClick={this.closeModal} className="modal-close">&times;</span>    
-    
-  
+      <span onClick={this.closeModal} className="modal-close">&times;</span>
+
+
       <form className="modal-form">
         <h1>Please Sign Up</h1> <div className='hr'></div>
         <div className='input'>
@@ -138,28 +138,28 @@ class NavBar extends React.Component {
             type="text"
             value={this.state.username}
             onChange={this.handleInput('username')} />
-          
+
         <input type='text' value={this.state.email}
-          onChange={this.handleInput('email')} placeholder='email'/>  
-        
+          onChange={this.handleInput('email')} placeholder='email'/>
+
         <input type="password" id='passw' placeholder='password'
           value={this.state.password}
           onChange={this.handleInput('password')} />
-        
+
         </div>
         <div className='submit'>
           <button onClick={this.handleSubmit} id='login'>Sign Up</button>
-        </div>  
+        </div>
       </form>
     </Modal>
   );
 }
 
-  
+
   render() {
     const display = this.props.currentUser ? (
       <div className="menu-text">
-      
+
        <SearchContainer />
        <NavLink activeClassName='menu-item-active' className="menu-item" to="/dashboard">Dashboard</NavLink>
       <NavLink activeClassName='menu-item-active' className="menu-item" to="/locations">Locations</NavLink>
@@ -167,13 +167,13 @@ class NavBar extends React.Component {
       </div>
     ) : (
     <div className='menu-text menu-text-short'>
-      <button onClick={this.openModal('signup')} 
+      <button onClick={this.openModal('signup')}
         className='inverse-menu-btn'>Sign Up</button>
       <button onClick={this.openModal('login')} className= 'menu-btn'>
         Log In</button>
     </div>
   );
-  const formType = this.state.action === 'login' ? 
+  const formType = this.state.action === 'login' ?
   this.LoginWindow() : this.SignUpWindow();
 
   return (
@@ -191,6 +191,3 @@ class NavBar extends React.Component {
 }
 
 export default NavBar;
-
-
- 
