@@ -8,6 +8,8 @@ import django.contrib.auth as auth
 from .utils import users_session_data
 from .forms import UserForm, SessionForm
 
+import json
+
 # Create your views here.
 
 def index(request):
@@ -15,8 +17,10 @@ def index(request):
 
 
 def create(request):
+    user = json.loads(request.body)['user']
+
     if request.method == 'POST' and not request.user.is_authenticated:
-        form = UserForm(request.POST['user'])
+        form = UserForm(user)
 
         if form.is_valid():
             username = form.cleaned_data['username']
