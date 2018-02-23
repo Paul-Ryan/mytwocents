@@ -1,5 +1,7 @@
 from django.urls import path, include
 
+from . import views
+
 urlpatterns = [
-    path('', view.sesion, name='session')
+    path('', views.session, name='session')
 ]

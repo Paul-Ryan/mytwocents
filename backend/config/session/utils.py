@@ -9,7 +9,7 @@ from .forms import SessionForm
 
 # Copy and pasted from user/utils.py because of intransigence
 
-def users_session_data(request):
+def session_data(request):
     responseData = {
         'user': {
             'id': request.user.id,
@@ -22,7 +22,7 @@ def users_session_data(request):
 
 
 def create_session(request):
-    form = SessionForm(request.POST['user'])
+    form = SessionForm(json.loads(request.body)['user'])
 
     if form.is_valid():
         username = form.cleaned_data['username']
@@ -38,10 +38,10 @@ def create_session(request):
         if user:
             auth.login(request, user)
 
-    return JsonResponse(users_session_data(request))
+    return JsonResponse(session_data(request))
 
 
 def delete_session(request):
     auth.logout(request)
 
-    return JsonResponse(users_session_data(request))
+    return JsonResponse(session_data(request))
