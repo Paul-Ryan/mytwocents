@@ -4,8 +4,7 @@
   "description": "Being asked to write an article for \"exposure\" or for a very low payment is a problem many writers experience. We want to offer 1. Publications a way to give their writers an additional potential    revenue source directly from their readers. 2. Independent authors (such as bloggers) with an easy way to solicit    contributions from their audience.",
   "main": "index.js",
   "directories": {
-    "doc": "docs",
-    "test": "test"
+    "doc": "docs"
   },
   "scripts": {
     "webpack": "webpack -w",
@@ -13,22 +12,21 @@
   },
   "private": true,
   "dependencies": {
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-modal": "^3.1.11",
-    "react-redux": "^5.0.6",
+    "react-modal": "^3.3.1",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "webpack": "^3.10.0",
-    "redux-logger": "^3.0.6"
-  },
-  "devDependencies": {
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "webpack": "^3.11.0"
   },
   "repository": {
     "type": "git",
