@@ -142,8 +142,8 @@ const sendUserData = (e) => {
   e.preventDefault();
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
-  const userData = {username,password};
-  loginRequest(userData);
+  const user = {username,password};
+  loginRequest(user);
 };
 
 // const postUser = user => (
@@ -155,12 +155,13 @@ const sendUserData = (e) => {
 // );
 
 const loginRequest = user => {
+  console.log(JSON.stringify({user}));
   $.ajax({
     url: 'http://localhost:8000/api/session/',
     method: 'POST',
-    data: {user},  
-  }).then(userResponse => (console.log(userResponse)), err => (
-      console.log(err.responseJSON))
+    data:  JSON.stringify({user})  
+  }).then(userResponse => (console.log('userResponse' + userResponse)), err => (
+      console.log('Error:' + err.responseJSON))
   );
 };
 
