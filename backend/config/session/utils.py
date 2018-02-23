@@ -20,6 +20,13 @@ def session_data(request):
 
     return responseData
 
+def add_access_control(response):
+        response["Access-Control-Allow-Origin"] = "*"
+        response["Access-Control-Allow-Methods"] = "POST"
+        response["Access-Control-Max-Age"] = "1000"
+        response["Access-Control-Allow-Headers"] = "X-Requested-With, Content-Type"
+
+        return response
 
 def create_session(request):
     form = SessionForm(json.loads(request.body)['user'])
@@ -38,7 +45,7 @@ def create_session(request):
         if user:
             auth.login(request, user)
 
-    return JsonResponse(session_data(request))
+    return add_access_control(JsonResponse(session_data(request)))
 
 
 def delete_session(request):
