@@ -28,7 +28,7 @@
     "redux-logger": "^3.0.6"
   },
   "devDependencies": {
-   "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6"
   },
   "repository": {
     "type": "git",
