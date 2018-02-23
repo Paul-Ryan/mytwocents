@@ -111,11 +111,13 @@ const addModalWindow = () => {
   const emailInput = document.createElement('input');
   emailInput.type = 'text';
   emailInput.placeholder = 'Email';
+  emailInput.id = 'username';
   input.appendChild(emailInput);
   
   const PasswordInput = document.createElement('input');
   PasswordInput.type = 'Password';
   PasswordInput.placeholder = 'Password';
+  PasswordInput.id = 'password';
   input.appendChild(PasswordInput);
   
   const submitDiv = document.createElement('div');
@@ -129,8 +131,47 @@ const addModalWindow = () => {
   signup.innerHTML = 'Sign Up';
   submitDiv.appendChild(signup);
   const signIn = document.createElement('button');
+  signIn.onclick = sendUserData;
   signIn.innerHTML = 'Sign In';
   submitDiv.appendChild(signIn);
   // const closeDiv = document.createElement('div');
   // closeDiv.classList.add('modal-screen');
 };
+
+const sendUserData = (e) => {
+  e.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  const userData = {username,password};
+  loginRequest(userData);
+};
+
+// const postUser = user => (
+//   $.ajax({
+//     url: '/api/users',
+//     method: 'POST',
+//     data: {user}
+//   })
+// );
+
+const loginRequest = user => {
+  $.ajax({
+    url: 'http://localhost:8000/api/session/',
+    method: 'POST',
+    data: {user},  
+  }).then(userResponse => (console.log(userResponse)), err => (
+      console.log(err.responseJSON))
+  );
+};
+
+// const login = () => loginRequest(userdata)
+//   .then(user => (console.log(user)), err => (
+//     console.log(err.responseJSON))
+//   );
+
+// const logout = () => (
+//   $.ajax({
+//     url: '/api/session',
+//     method: 'DELETE',
+//   })
+// );

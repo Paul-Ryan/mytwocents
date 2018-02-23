@@ -30,4 +30,3 @@ def users(request):
             auth.login(request, user)
 
     return JsonResponse(users_session_data(request))
-
