@@ -1,14 +1,13 @@
 import React from 'react';
-import UserProjectItem from './user_project_item';
-import UserTipItem from './user_tip_item';
+// import UserTipItem from './user_tip_item';
 
-class UserInfo extends React.Component {
+class UserPage extends React.Component {
   constructor(props) {
     super(props);
   }
 
   componentDidMount() {
-    console.log(this.props.username);
+    // console.log(this.props.username);
     // this.props.fetchTips();
   }
 
@@ -45,4 +44,4 @@ class UserInfo extends React.Component {
   }
 
 
-export default UserInfo;
+export default UserPage;
