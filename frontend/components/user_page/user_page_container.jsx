@@ -3,9 +3,11 @@ import { connect } from 'react-redux';
 import UserPage from './user_page';
 
 const mapStateToProps = (state, ownProps) => {
-
+  console.log("state", state);
   return {
-    username: "bob"
+    currentUser: state.currentUser,
+    username: "bob",
+    tips: [1, 2, 3]
   };
 };
 
