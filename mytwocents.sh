@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=`pwd`
+DIR=$PWD
 
 function find_task() {
   case $1 in
@@ -15,6 +15,11 @@ function find_task() {
       ;;
     "drop_database")
       source ./scripts/drop_database.sh $2
+      ;;
+    "setup")
+      source ./scripts/create_database.sh $2
+      source ./scripts/create_venv.sh $2
+      source ./scripts/install_dependencies.sh $2
       ;;
   esac
 }
