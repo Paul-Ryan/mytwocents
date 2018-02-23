@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/script_form.css">
+
+    <title>script form</title>
+  </head>
+  <body>
+    <div class="form-page">
+      <h1>Create your Tip Jar</h1>
+        <label for="article_id" class="script-generator">Article Id</label>
+        <input id="article_id" type="number" required placeholder="100">
+        <button onclick="buildScript()">
+          Create
+        </button>
+      <h2 for="script-container" class="script-generator">Put this script in your article page's HTML</h2>
+      <div id="script-container">
+      </div>
+    </div>
+
+    <script>
+      function buildScript() {
+        let articleId = document.getElementById("id1");
+        console.log(articleId);
+        let scriptObj = document.getElementById("script-container");
+
+        scriptObj.innerHTML = "Script here";
+      }
+    </script>
+
+  </body>
+</html>
