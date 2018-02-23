@@ -4,15 +4,12 @@ import { Link } from 'react-router-dom';
 
 class SplashPage extends React.Component {
 
-
   render() {
-
-
     return (
       <div>
         <h1>My Two Cents</h1>
 
-        <div clasName="readers">
+        <div className="readers">
           <h2>It works for reader</h2>
         </div>
 

@@ -1,19 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import SplashPage from './splash_page';
+import UserPage from './user_page';
 
 const mapStateToProps = (state, ownProps) => {
 
-  return {};
+  return {
+    username: "bob"
+  };
 };
 
+const mapDispatchToProps = () => {
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+  return({
 
-  return {};
+  });
 };
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SplashPage);
+)(UserPage);
