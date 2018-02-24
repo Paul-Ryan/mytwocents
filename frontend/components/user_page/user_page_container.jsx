@@ -8,6 +8,7 @@ const mapStateToProps = (state, ownProps) => {
     currentUser: state.currentUser,
     username: "bob",
     tips: [1, 2, 3]
+
   };
 };
 
