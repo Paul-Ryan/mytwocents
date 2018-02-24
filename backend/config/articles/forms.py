@@ -1,9 +1,13 @@
-from django import ModelForm
+from django.forms import ModelForm
 
-import Article from articles
+from .validators import validate_non_empty_string
+
+import articles
 
 class ArticlesForm(ModelForm):
-
+    title = forms.TextField(validators=[validate_non_empty_string])
+    
     class Meta:
-        model = Article
+        model = articles.models.Article
         fields = ["title"]
+        
