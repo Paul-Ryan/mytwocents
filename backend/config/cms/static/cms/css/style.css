@@ -46,6 +46,21 @@ h1 {
   min-height: 200px;
 }
 
+.unit {
+  margin: 15px;
+  padding: 10px;
+  min-width: 200px;
+  min-height: 300px;
+}
+
+.unit > h3 {
+  min-height: 20px;
+}
+
+.splash-header {
+  margin: 0 0 0 25px;
+}
+
 /* Modal and navbar styles */
 
 .modal {
