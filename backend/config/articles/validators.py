@@ -3,7 +3,7 @@ def validate_non_empty_string(value):
     # better.
     try:
         value += ''
-        if value.length == 0:
+        if len(value) == 0:
             raise ValidationError(
                 ('%(value)s must be a non-empty string'),
                 params={'value': value})
