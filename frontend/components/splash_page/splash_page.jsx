@@ -7,14 +7,42 @@ class SplashPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>My Two Cents</h1>
-
+        <h2>It works for reader</h2>
         <div className="readers">
-          <h2>It works for reader</h2>
+          <div className="unit">
+            <h3>One Click</h3>
+            <p>
+            </p>
+          </div>
+          <div className="unit">
+            <h3>One Click</h3>
+            <p>
+            </p>
+          </div>
+          <div className="unit">
+            <h3>One Click</h3>
+            <p>
+            </p>
+          </div>
         </div>
 
-        <div className="author">
-          <h2>It works for authors</h2>
+        <h2>It works for authors</h2>
+        <div className="authors">
+          <div className="unit">
+            <h3>One Click</h3>
+            <p>
+            </p>
+          </div>
+          <div className="unit">
+            <h3>One Click</h3>
+            <p>
+            </p>
+          </div>
+          <div className="unit">
+            <h3>One Click</h3>
+            <p>
+            </p>
+          </div>
         </div>
 
       </div>
