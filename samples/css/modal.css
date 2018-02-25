@@ -68,11 +68,19 @@
   font-size: 14px;
 }
 
-.modal-form input:first-child {
+.modal-form input{
   margin-bottom: 10px;
 
-}.modal-form input:last-child {
+}
+/* .modal-form input:last-child {
   margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.error {
+  color: red;
+  display: none;
+  text-align: center;
 }
 
 .modal-form .submit {
