@@ -21,6 +21,3 @@ def article_by_id(request):
     if request.method == 'GET':
         # This method should fetch the particular article. Do we need?
         pass
-
-
-    # Again, what to use in place of None, here?

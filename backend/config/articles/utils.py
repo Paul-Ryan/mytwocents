@@ -18,14 +18,6 @@ def validate_non_empty_string(value):
             params={'value': value})
 
 
-def article_data(request):
-    responseData = {
-        'article': {'title': request.article.title,
-                    'author_id': request.user.id,}
-    }
-    return responseData
-
-
 def create_article(request):
     if not request.user.is_authenticated:
         return
@@ -35,5 +27,5 @@ def create_article(request):
     form = ArticleForm(data)
 
     if form.is_valid():
-        form.save()#title = form.cleaned_data['title']
-        return JsonResponse(article_data(request))
+        form.save()
+        return JsonResponse({'article': data})
