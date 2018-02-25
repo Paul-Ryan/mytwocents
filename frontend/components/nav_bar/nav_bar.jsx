@@ -156,7 +156,6 @@ class NavBar extends React.Component {
     const display = this.props.currentUser ? (
       <div className="menu-text">
        <NavLink activeClassName='menu-item-active' className="menu-item" to="/dashboard">Dashboard</NavLink>
-      <NavLink activeClassName='menu-item-active' className="menu-item" to="/locations">Locations</NavLink>
        <button onClick={this.logout} className="menu-item">Logout</button>
       </div>
     ) : (
