@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from .utils import create_article #, #get_author_articles
 
 def article(request):
