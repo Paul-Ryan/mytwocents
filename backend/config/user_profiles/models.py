@@ -5,7 +5,8 @@ from django.dispatch import receiver
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    token_balance = models.IntegerField(default=0)
+    # Adding 10 credits by default as we don't yet have add credits functionality
+    token_balance = models.IntegerField(default=10)
 
 
 @receiver(post_save, sender=User)
