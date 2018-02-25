@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from .utils import create_article #, #get_author_articles
 
 def article(request):
 

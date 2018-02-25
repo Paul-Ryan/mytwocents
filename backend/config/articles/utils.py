@@ -30,10 +30,12 @@ def create_article(request):
     if not request.user.is_authenticated:
         return
 
-    form = ArticleForm(json.loads(request.body)['article'])
+    data = json.loads(request.body)['article']
+    data['author_id'] = request.user.id
+    form = ArticleForm(data)
 
     if form.is_valid():
-        title = form.cleaned_data['title']
+        form.save()#title = form.cleaned_data['title']
 
 
     return JsonResponse(article_data(request))
