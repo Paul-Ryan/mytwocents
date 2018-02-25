@@ -36,6 +36,4 @@ def create_article(request):
 
     if form.is_valid():
         form.save()#title = form.cleaned_data['title']
-
-
-    return JsonResponse(article_data(request))
+        return JsonResponse(article_data(request))
