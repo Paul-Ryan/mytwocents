@@ -166,7 +166,7 @@ class NavBar extends React.Component {
     ) : (
     <div className='menu-text menu-text-short'>
       <button onClick={this.openModal('signup')}
-        className='inverse-menu-btn'>Sign Up</button>
+        className='inverse-menu-btn'>Sign Up <span className="divide">|</span></button>
       <button onClick={this.openModal('login')} className= 'menu-btn'>
         Log In</button>
     </div>
