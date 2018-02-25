@@ -6,7 +6,7 @@ class SplashPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="splash-bg">
         <h2 className="splash-header">It works for reader</h2>
         <div className="readers">
           <div className="unit">

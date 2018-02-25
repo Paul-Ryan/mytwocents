@@ -3,16 +3,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 body {
+  background: #d6f8ff;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* .splash-image {
-  background: lightblue;
-  position: absolute;
-  min-height: 100vh;
-  width: 100vw;
-  z-index: -1;
-} */
+.splash-bg {
+  background-image: url(https://res.cloudinary.com/paul-ryan/image/upload/v1517897259/thought-catalog.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 15vh;
+}
 
 .row {
   position: relative;
@@ -56,13 +56,17 @@ body {
   display: flex;
   justify-content: space-around;
   min-height: 200px;
+  background: rgba(128, 128, 128, .65);
+}
+
+.readers {
+  margin-bottom: 200px;
 }
 
 .unit {
   margin: 15px;
   padding: 10px;
   min-width: 200px;
-  min-height: 300px;
 }
 
 .unit > h3 {
@@ -70,7 +74,9 @@ body {
 }
 
 .splash-header {
-  margin: 0 0 0 25px;
+  margin: 0;
+  padding: 20px 0 0 25px;
+  background: rgba(128, 128, 128, .65);
 }
 
 /* Modal and navbar styles */
