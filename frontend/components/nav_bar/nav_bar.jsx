@@ -13,6 +13,7 @@ class NavBar extends React.Component {
     this.state = {
      username: '',
      password: '',
+     email: '',
    };
    this.openModal = this.openModal.bind(this);
    this.closeModal = this.closeModal.bind(this);
@@ -36,7 +37,12 @@ class NavBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createNewUser(this.state);
+    const user = {username: this.state.username, 
+                  email: this.state.email, 
+                  password: this.state.password};
+    console.log(user);
+    this.props.createNewUser(user);
+    // this.props.createNewUser(this.state);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -49,7 +55,7 @@ class NavBar extends React.Component {
 
  demoLogin(e) {
    e.preventDefault();
-   this.setState({username:'bob'});
+   this.setState({username:'alexey'});
    this.setState({password: 'secret'});
    setTimeout(()=> {
      document.getElementById('login').click();
@@ -135,7 +141,7 @@ class NavBar extends React.Component {
             value={this.state.username}
             onChange={this.handleInput('username')} />
 
-        <input type='text' value={this.state.email}
+          <input id='email' type='text' value={this.state.email}
           onChange={this.handleInput('email')} placeholder='email'/>
 
         <input type="password" id='passw' placeholder='password'
