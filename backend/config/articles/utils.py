@@ -6,8 +6,6 @@ from django.contrib.auth.models import User
 from .forms import ArticleForm
 
 def validate_non_empty_string(value):
-    # This could also be done in the Article.Form. Unsure if that would be
-    # better.
     try:
         value += ''
         if value.length == 0:
@@ -36,9 +34,6 @@ def create_article(request):
 
     if form.is_valid():
         title = form.cleaned_data['title']
-        # How do we get the user_id for use as author_id
 
 
     return JsonResponse(article_data(request))
-
-
