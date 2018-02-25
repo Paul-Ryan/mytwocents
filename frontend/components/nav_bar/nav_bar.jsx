@@ -11,12 +11,8 @@ class NavBar extends React.Component {
     this.currentUser = this.props.currentUser;
     this.logout = this.props.logout;
     this.state = {
-     modalIsOpen: false,
      username: '',
      password: '',
-     action: '',
-     email: '',
-     is_host: false
    };
    this.openModal = this.openModal.bind(this);
    this.closeModal = this.closeModal.bind(this);
@@ -33,7 +29,9 @@ class NavBar extends React.Component {
 
   handleLogin(e) {
     e.preventDefault();
-    this.props.login(this.state);
+    const user = this.state;
+    console.log(JSON.stringify({user}));
+    this.props.login(user);
   }
 
   handleSubmit(e) {
@@ -157,8 +155,6 @@ class NavBar extends React.Component {
   render() {
     const display = this.props.currentUser ? (
       <div className="menu-text">
-
-       <SearchContainer />
        <NavLink activeClassName='menu-item-active' className="menu-item" to="/dashboard">Dashboard</NavLink>
       <NavLink activeClassName='menu-item-active' className="menu-item" to="/locations">Locations</NavLink>
        <button onClick={this.logout} className="menu-item">Logout</button>
