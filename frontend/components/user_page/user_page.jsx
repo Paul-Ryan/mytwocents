@@ -16,7 +16,7 @@ class UserPage extends React.Component {
         <h1>Your Tips</h1>
         <div className="user-layout">
           <div className="all-tips">
-            <h2>Articles you support!</h2>
+            <h1>Articles you support!</h1>
             <ul className="user-tip-list">
               {
                 this.props.tips.map(tip => (
