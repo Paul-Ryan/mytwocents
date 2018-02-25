@@ -27,7 +27,7 @@ body {
 }
 
 .divide {
-  padding-left: 9px; 
+  padding-left: 9px;
 }
 
 .title h1,
@@ -38,6 +38,10 @@ body {
 .container-menu {
   display: flex;
   justify-content: flex-end;
+}
+
+header > .row {
+  border-bottom: 1px solid gray;
 }
 
 .menu-text {
@@ -235,4 +239,43 @@ body {
 
 .about p {
   margin-left: 10px;
+}
+
+/* user tip page */
+
+.user-info {
+  margin: 0 12vw;
+}
+
+.user-info h1 {
+  text-align: center;
+}
+
+.user-layout {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.all-tips {
+  flex-grow: 2;
+}
+
+.user-tip-item {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-meta-info {
+  flex-grow: 1.8
+}
+
+.remove-tip {
+  border: none;
+  font-family: 'Slabo 27px', serif;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  border: 3px solid gray;
+  font-size: 25px;
 }
