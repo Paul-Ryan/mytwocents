@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'users',
     'session',
     'articles',
+    'user_profiles.apps.UserProfilesConfig'
 ]
 
 MIDDLEWARE = [
