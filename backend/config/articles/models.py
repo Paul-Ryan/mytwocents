@@ -7,12 +7,12 @@ from .validators import validate_non_empty_string
 
 class Article(models.Model):
 
-    author_id = models.ForeignKey(User, on_delete=models.PROTECT)
+    author = models.ForeignKey(User, on_delete=models.PROTECT)
     title = models.TextField(validators=[validate_non_empty_string])
 
 
     class Meta:
-        unique_together = (('author_id', 'title'),)
+        unique_together = (('author', 'title'),)
 
     def __str__(self):
         """A string representation of the model."""
