@@ -7,7 +7,7 @@ def article(request):
 
     if request.method == 'GET':
         # Should get all the articles of the user, right?
-        pass
+        return articles_by_user_id(request, user_id)
 
     # Django really doesn't like None as a return. What to return if there is
     # no matching request.method? On the one hand, if frontend sends
@@ -16,8 +16,9 @@ def article(request):
     # to fail gracefully.
 
 
-def article_by_id(request):
+def article_by_user_id(request, user_id):
 
     if request.method == 'GET':
-        # This method should fetch the particular article. Do we need?
-        pass
+        user = User.objects.get(pk=user_id)
+        articles = user.articles
+        print(articles)
