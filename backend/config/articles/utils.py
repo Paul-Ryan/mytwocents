@@ -31,7 +31,7 @@ def create_article(request):
         return
 
     data = json.loads(request.body)['article']
-    data['author_id'] = request.user.id
+    data['author'] = request.user.id
     form = ArticleForm(data)
 
     if form.is_valid():
