@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 import Modal from 'react-modal';
 import loginStyles from './login_form_styles';
 import signupStyles from './signup_form_styles';
-// import SearchContainer from '../search/search_container';
 
 class NavBar extends React.Component {
 
@@ -17,7 +16,6 @@ class NavBar extends React.Component {
      password: '',
      action: '',
      email: '',
-     d_birth: '01/01/2018',
      is_host: false
    };
    this.openModal = this.openModal.bind(this);
@@ -180,8 +178,11 @@ class NavBar extends React.Component {
     <header>
       { formType }
       <div className='row'>
+        <div className="title">
+          <h1>My 2¢</h1>
+          <h2>Support the creators you care about</h2>
+        </div>
         <div className='container-menu'>
-        <div className='logo'><Link to='/'>Lounge Search</Link></div>
           {display}
         </div>
       </div>
