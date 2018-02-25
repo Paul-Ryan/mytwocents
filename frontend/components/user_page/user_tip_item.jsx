@@ -8,7 +8,8 @@ class UserTipItem extends React.Component {
   render() {
     return(
       <div className="user-tip-item">
-        User Tip Title
+        <h3>User Tip Title</h3>
+        <button className="remove-tip">Remove tip</button>
       </div>
 
     );

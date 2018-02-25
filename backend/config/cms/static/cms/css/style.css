@@ -26,6 +26,10 @@ body {
   text-align: center;
 }
 
+.divide {
+  padding-left: 9px;
+}
+
 .title h1,
 .title h2 {
   margin: 0;
@@ -34,6 +38,10 @@ body {
 .container-menu {
   display: flex;
   justify-content: flex-end;
+}
+
+header > .row {
+  border-bottom: 1px solid gray;
 }
 
 .menu-text {
@@ -231,4 +239,44 @@ body {
 
 .about p {
   margin-left: 10px;
+}
+
+/* user tip page */
+
+.user-info {
+  margin: 0 12vw;
+}
+
+.user-info h1 {
+  text-align: center;
+}
+
+.user-layout {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.all-tips {
+  flex-grow: 2;
+}
+
+.user-tip-item {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-meta-info {
+  flex-grow: 1.8
+}
+
+.remove-tip {
+  border-radius: 5px;
+  padding: 4px 12px;
+  height: 28px;
+  border: 3px solid gray;
+  font-size: 16px;
+  line-height: 0;
+  cursor: pointer;
 }
