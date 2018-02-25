@@ -243,12 +243,9 @@ header > .row {
 
 /* user tip page */
 
-.user-info {
+.user-info,
+.author-info {
   margin: 0 12vw;
-}
-
-.user-info h1 {
-  text-align: center;
 }
 
 .user-layout {
@@ -279,4 +276,32 @@ header > .row {
   font-size: 16px;
   line-height: 0;
   cursor: pointer;
+}
+
+/* Author dashboard component styles */
+
+.author-layout {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.author-article-list {
+  margin: 0;
+  flex-grow: 2;
+}
+
+.article-meta-info {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin: 0;
+  flex-grow: 1.8;
+}
+
+.article-item {
+  width: 400px;
+  display: flex;
+  margin: 0 20px 0 0;
+  justify-content: space-between;
+  align-items: center;
 }
