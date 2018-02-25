@@ -5,7 +5,7 @@ from .validators import validate_non_empty_string
 
 import articles
 
-class ArticlesForm(ModelForm):
+class ArticleForm(ModelForm):
     title = forms.CharField(validators=[validate_non_empty_string])
 
     class Meta:
