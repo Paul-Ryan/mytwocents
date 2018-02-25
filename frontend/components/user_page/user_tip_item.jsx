@@ -9,7 +9,7 @@ class UserTipItem extends React.Component {
     return(
       <div className="user-tip-item">
         <h3>User Tip Title</h3>
-        <button className="remove-tip">X</button>
+        <button className="remove-tip">Remove tip</button>
       </div>
 
     );

@@ -264,6 +264,7 @@ header > .row {
   width: 400px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .tip-meta-info {
@@ -271,11 +272,11 @@ header > .row {
 }
 
 .remove-tip {
-  border: none;
-  font-family: 'Slabo 27px', serif;
-  width: 50px;
-  border-radius: 50%;
-  height: 50px;
+  border-radius: 5px;
+  padding: 4px 12px;
+  height: 28px;
   border: 3px solid gray;
-  font-size: 25px;
+  font-size: 16px;
+  line-height: 0;
+  cursor: pointer;
 }
