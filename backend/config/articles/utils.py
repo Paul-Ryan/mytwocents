@@ -29,3 +29,15 @@ def create_article(request):
     if form.is_valid():
         form.save()
         return JsonResponse({'article': data})
+
+
+def articles_data(articles):
+    articles_dict = {}
+
+    for article in articles:
+        articles_dict[article.id] = {
+            "id": article.id,
+            "title": article.title,
+        }
+
+    return {"articles": articles_dict}
