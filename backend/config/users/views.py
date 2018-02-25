@@ -16,18 +16,18 @@ def users(request):
         form = UserForm(user)
 
         if form.is_valid():
-            username = form.cleaned_data['username']
-            email = form.cleaned_data['email']
-            password = form.cleaned_data['password']
-
-            user = User.objects.create_user(
-                username=username,
-                email=email,
-                password=password
-            )
-
-            user.save()
-            auth.login(request, user)
+            # username = form.cleaned_data['username']
+            # email = form.cleaned_data['email']
+            # password = form.cleaned_data['password']
+            #
+            # user = User.objects.create_user(
+            #     username=username,
+            #     email=email,
+            #     password=password
+            # )
+            #
+            # user.save()
+            # auth.login(request, user)
+            auth.login(request, form.save())
 
     return JsonResponse(users_session_data(request))
-
