@@ -1,1 +1,1 @@
-pweb: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn --pythonpath backend/config config.wsgi --log-file -
