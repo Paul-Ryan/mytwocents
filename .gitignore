@@ -50,3 +50,6 @@ tests/report/
 bundle.js
 bundle.js.map
 project_notes
+
+# MTC project ignore
+/backend/config/staticfiles
