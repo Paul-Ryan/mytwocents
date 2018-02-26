@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "npm install --save-dev && npm run webpack",
+    "start": "npm install --only=dev && npm run webpack",
     "webpack": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
