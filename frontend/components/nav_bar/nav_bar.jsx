@@ -150,7 +150,7 @@ class NavBar extends React.Component {
 
         </div>
         <div className='submit'>
-          <button onClick={this.handleSubmit} id='login'>Sign Up</button>
+          <button onClick={this.handleSubmit} id='signup'>Sign Up</button>
         </div>
       </form>
     </Modal>
@@ -162,13 +162,13 @@ class NavBar extends React.Component {
     const display = this.props.currentUser ? (
       <div className="menu-text">
        <NavLink activeClassName='menu-item-active' className="menu-item" to="/dashboard">Dashboard</NavLink>
-       <button onClick={this.logout} className="menu-item">Logout</button>
+       <button onClick={this.logout}>Logout</button>
       </div>
     ) : (
     <div className='menu-text menu-text-short'>
       <button onClick={this.openModal('signup')}
-        className='inverse-menu-btn'>Sign Up <span className="divide">|</span></button>
-      <button onClick={this.openModal('login')} className= 'menu-btn'>
+        >Sign Up</button>
+      <button onClick={this.openModal('login')}>
         Log In</button>
     </div>
   );
@@ -180,11 +180,9 @@ class NavBar extends React.Component {
       { formType }
       <div className='row'>
         <div className="title">
-          <h1>My 2¢</h1>
-          <h2>Support the creators you care about</h2>
-        </div>
-        <div className='container-menu'>
-          {display}
+          <img src='http://res.cloudinary.com/dgent8r3s/image/upload/v1519607068/my2cents-logo.svg'></img>
+          <h1>My 2¢ - support the creators you care about</h1>
+            {display}
         </div>
       </div>
     </header>
@@ -193,3 +191,7 @@ class NavBar extends React.Component {
 }
 
 export default NavBar;
+
+// <div className='container-menu'>
+// 
+// </div>
