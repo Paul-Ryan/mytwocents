@@ -25,7 +25,7 @@ class AuthorDashboard extends React.Component {
             <h1>40 tips this week</h1>
             <h1>100 tips total</h1>
           </div>
-        </div>  
+        </div>
       </div>
     );
   }
